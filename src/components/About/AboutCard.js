@@ -8,13 +8,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="purple">Eduardo Rico Manzanera </span>
+            from <span className="purple"> Salamanca, Spain.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I am currently employed as a <span className="purple">Senior Software Developer at ARSOFT</span>.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I have completed <span className="purple">Computer Engineering</span> at University of Salamanca and 
+            a Master's Degree in <span className="purple">Videogame Programming</span> at Complutense University of Madrid.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -24,17 +24,23 @@ function AboutCard() {
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Watch Anime
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Go to the Gym
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling
             </li>
+            <li className="about-activity">
+              <ImPointRight /> Spending time with my loved ones
+            </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Love is not only something you feel, it is something you do"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">David Wilkerson</footer>
         </blockquote>
       </Card.Body>
     </Card>
