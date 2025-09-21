@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import underpacked from "../../Assets/Projects/underpacked.jpg";
-
+import projects from '../../Assets/data/projects.js';
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -16,14 +15,13 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {projects.map(project=>(
+          <Col md={4} key={project.id} className="project-card">
             <ProjectCard
-              imgPath={underpacked}
-              title="Underpacked!"
-              description="Welcome to the largest parcel delivery company in the galaxy! Embark on a space odyssey as a delivery driver, either alone or with a friend. Dodge threats, survive job insecurity, and deliver packages. Prove that you are the best delivery drivers in the universe!"
-              steamLink="https://store.steampowered.com/app/3587480/Underpacked/"
+              project={project}
             />
           </Col>
+          ))}
         </Row>
       </Container>
     </Container>

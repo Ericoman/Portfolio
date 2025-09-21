@@ -473,6 +473,39 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
+.project-details-section {
+  position: relative !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.project-details-card-view {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.project-card-image
+{
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 300px;
+  width: 100%;   /* scales down properly */
+  height: auto;  /* keeps aspect ratio */
+  object-fit:contain;
+  align-self: center;
+}
+.project-card-image-big
+{
+  max-width: 600px;
+  max-height: 400px;
+  width: 100%;   /* scales down properly */
+  height: auto;  /* keeps aspect ratio */
+  object-fit:contain;
+  align-self: center;
+}
+
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;

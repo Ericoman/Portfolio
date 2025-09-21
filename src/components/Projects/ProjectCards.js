@@ -1,24 +1,53 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Badge } from "react-bootstrap";
 import { BsGithub, BsSteam } from "react-icons/bs";
 import { FaGoogleDrive, FaItchIo } from "react-icons/fa";
 import { AiFillGitlab } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 function ProjectCards(props) {
+  const navigate = useNavigate();
+  const project = props.project;
+
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+    <Card 
+      className="project-card-view"
+      onClick={() => navigate(`/project/${project.id}`)}
+      style={{ cursor: "pointer" }}
+    >
+      <Card.Img variant="top" className="project-card-image" src={project.image} alt={project.title} />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title>
+          {project.title}
+          {project.inProgress && (
+            <Badge 
+              bg="warning" 
+              text="dark"
+              style={{ marginLeft: "10px", marginBottom: "10px"}}
+            >
+              In Progress
+            </Badge>
+          )}
+          {project.isSoloProject && (
+          <Badge 
+          bg="info" 
+          text="dark"
+          style={{ marginLeft: "10px", marginBottom: "10px"}}
+          >
+            Solo Project
+          </Badge>
+        )}
+        </Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          {project.shortDescription}
         </Card.Text>
 
-        {props.ghLink && (
+        {project.ghLink && (
           <Button 
             variant="primary" 
-            href={props.ghLink} 
+            href={project.ghLink} 
             target="_blank"
             style={{ marginLeft: "10px", marginTop: "10px" }}
           >
@@ -27,10 +56,10 @@ function ProjectCards(props) {
           </Button>
         )}
 
-        {props.glabLink && (
+        {project.glabLink && (
           <Button 
             variant="primary" 
-            href={props.glabLink} 
+            href={project.glabLink} 
             target="_blank"
             style={{ marginLeft: "10px", marginTop: "10px" }}
           >
@@ -39,10 +68,10 @@ function ProjectCards(props) {
           </Button>
         )}
 
-        {props.itchioLink && (
+        {project.itchioLink && (
           <Button
             variant="primary"
-            href={props.itchioLink}
+            href={project.itchioLink}
             target="_blank"
             style={{ marginLeft: "10px", marginTop: "10px" }}
           >
@@ -52,10 +81,10 @@ function ProjectCards(props) {
         )}
 
 
-        {props.steamLink && (
+        {project.steamLink && (
           <Button
             variant="primary"
-            href={props.steamLink}
+            href={project.steamLink}
             target="_blank"
             style={{ marginLeft: "10px", marginTop: "10px" }}
           >
@@ -64,10 +93,10 @@ function ProjectCards(props) {
           </Button>
         )}
 
-        {props.driveLink && (
+        {project.driveLink && (
           <Button 
             variant="primary" 
-            href={props.driveLink} 
+            href={project.driveLink} 
             target="_blank"
             style={{ marginLeft: "10px", marginTop: "10px" }}
           >
