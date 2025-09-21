@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import projects from '../../Assets/data/projects';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ProjectDetailsCard from './ProjectDetailsCard';
 import Particle from '../Particle';
 

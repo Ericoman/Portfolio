@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { BsGithub, BsSteam } from "react-icons/bs";
 import { FaGoogleDrive, FaItchIo } from "react-icons/fa";
 import { AiFillGitlab } from "react-icons/ai";
-import { ImKeyboard, ImLaptop, ImPacman } from "react-icons/im";
+import { ImKeyboard, ImLaptop } from "react-icons/im";
 import { Badge } from 'react-bootstrap';
 
 function ProjectDetailsCard(props) {
