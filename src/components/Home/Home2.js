@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiFillGitlab
 } from "react-icons/ai";
 import { FaLinkedinIn,FaItchIo } from "react-icons/fa";
+import Type from "./Type";
 
 function Home2() {
   return (
@@ -17,6 +18,20 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={8} className="home-about-description">
+            <Row >
+              <p className="heading-name">
+                I'm
+                <strong className="main-name"> Eduardo Rico Manzanera</strong> a
+              </p>
+              <div style={{ minHeight:50, textAlign: "justify" }}>
+                <Type />
+              </div>
+            </Row>
+            <Row>
             <p className="home-about-body">
               Videogames have been an important part of my life since I was little.
               I fell in love with programming them and I try my best to learn more every day
@@ -34,6 +49,7 @@ function Home2() {
               </i>
               <br />
             </p>
+            </Row>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
