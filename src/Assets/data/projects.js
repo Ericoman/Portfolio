@@ -45,7 +45,7 @@ const projects = [
     id: "gbb",
     title: "Grabs Bots Battle",
     inProgress: false,
-    shortDescription: (<>Online multiplayer game made with<span className="purple">UE4 using C++</span></>),
+    shortDescription: (<>Online multiplayer game made with <span className="purple">UE4 using C++</span></>),
     fullDescription: null,
     isSoloProject: false,
     contributions: [
@@ -67,7 +67,7 @@ const projects = [
     id: "slide-dungeon",
     title: "Slide Dungeon",
     inProgress: false,
-    shortDescription: (<>In this puzzle and adventure game you embody a wizard trapped in a mysterious dungeon. Made with<span className="purple">Unity</span>.</>),
+    shortDescription: (<>In this puzzle and adventure game you embody a wizard trapped in a mysterious dungeon. Made with <span className="purple">Unity</span>.</>),
     fullDescription: "With only one spell and lots of courage, walk through dark rooms to find your way out, but careful things may move in unexpected ways... Move the dungeon like a puzzle game, and solve a bigger puzzle based in the traditional super slide game to scape.",
     isSoloProject: false,
     contributions: [
