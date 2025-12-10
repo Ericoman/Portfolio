@@ -32,7 +32,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://github.com/Ericoman"
+                href="https://gitlab.com/eduardoricomanzanera"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

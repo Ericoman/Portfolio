@@ -64,6 +64,40 @@ const projects = [
     technologies: ['Unreal Engine 4','C++', 'Git']
   },
   {
+    id: "aftermathfellows",
+    title: "Aftermath Fellows",
+    inProgress: false,
+    shortDescription: (<>Player controls a pack of AI volunteers. Made with <span className="purple">Unity</span>. 5th place overall at Ubisoft's Volunteer Week Game Jam 2025.</>),
+    fullDescription: (<>
+      Lead a growing squad of brave little helpers as they rescue survivors, clear debris, repair damage, and push deeper into disaster zones. Manage your crowd of Fellows, keep them safe from hazards, and complete objectives to restore hope one area at a time.
+
+      Gameplay
+      <ol>
+        <li>Command a whole crew of tiny responders, each ready to jump into action.</li>
+        <li>Clear debris, heal injured civilians, and rebuild pathways to progress.</li>        
+        <li>Face dangers like the natural elements.</li>
+        <li>Advance through levels that move from chaos to recovery, reflecting the full cycle of disaster response.</li>
+        <li>Complete objectives to expand your team and unlock new interventions.</li>
+      </ol>
+      </>),
+    isSoloProject: false,
+    contributions: [
+      "Pack AI behavior and navigation",
+      "Volunteer AI behavior",
+      "Input management",
+      "Audio integration",
+      "Target evaluation system for AI",
+      "Sensor system for AI perception"
+    ],
+    image: require("../../Assets/Projects/aftermathfellows.png"),
+    ghLink: "https://github.com/aemc64/ubijam2025",
+    glabLink: null,
+    itchioLink: "https://paxcu.itch.io/aftermath-fellows",
+    steamLink: null,
+    driveLink: null,
+    technologies: ['Unity','C#', 'Git']
+  },
+  {
     id: "slide-dungeon",
     title: "Slide Dungeon",
     inProgress: false,
