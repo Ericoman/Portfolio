@@ -123,6 +123,36 @@ const projects = [
     technologies: ['Unity','C#', 'Git', 'Jira', 'Discord']
   },
   {
+    id: "golden-lemon",
+    title: "Golden Lemon Harvest Farm",
+    inProgress: false,
+    shortDescription: (<> Farm game in wich you have to plant, water and harvest until you find the Golden Lemon. Made with <span className="purple">Unreal Engine 5 and C++</span>.</>),
+    fullDescription: (<>In this game you have to harvest the Golden Lemon to fulfill your parents' dream of being millionares.
+      <br/><br/>In order to do that you have to plant and harvest some ordinary plants and make some money to invest in the stores and finally harvest the golden lemon.
+      <br/><br/>You can use the scythe to prepare the ground and to harvest when the plant is ready, but careful, if you harvest ahead of time you will lose your crop!
+      <br/><br/>Don't forget to water your plants everyday for them to grow.
+      <br/><br/>You have 30 days to do so. Good luck!
+      </>),
+    isSoloProject: true,
+    contributions: [
+      "GAS-based interaction system",
+      "Data assets for items and crops",
+      "Inventory component and hotbar",
+      "Crop growth component",
+      "Store component",
+      "UI based on Unreal MVVM architecture",
+      "FMOD integration",
+      "Several subsystems (days elapsed, item and plant registry)",
+    ],
+    image: require("../../Assets/Projects/golden-lemon.png"),
+    ghLink: "https://github.com/Ericoman/FarmRPG",
+    glabLink: null,
+    itchioLink: "https://eddricman.itch.io/glhf",
+    steamLink: null,
+    driveLink: null,
+    technologies: ['Unreal Engine 5','C++', 'GAS', 'FMOD', 'Git']
+  },
+  {
     id: "mission-accomplished",
     title: "Mission Accomplished",
     inProgress: false,
