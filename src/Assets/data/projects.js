@@ -1,5 +1,70 @@
 const projects = [
   {
+    id: "lexicondiaboli",
+    title: "Lexicon Diaboli",
+    inProgress: false,
+    shortDescription: (<>Atmospheric horror game in wich you exorcise a cursed church. This game was the <span className="purple">winner</span> of Jamaggedon 2026 under the theme: Architecture of Meaning. Made with <span className="purple">Unity</span>.</>),
+    fullDescription: (<>
+      Lexicon Diaboli is an atmospheric horror game where you play as an exorcist sent to cleanse an abandoned cursed church, left in ruins after a failed ritual. Deep within its crumbling halls dwells a powerful demon that claimed the life and soul of the last pastor who dared to face it.
+      <br/><br/>
+      Before vanishing, the pastor scattered fragments of their research throughout the church: forbidden notes, ritual instructions, and torn spell pages. These allow you to open sealed doors, reveal hidden passages, and alter the very structure of the temple itself. Some obstacles cannot be overcome with a single spell, you can combine them at the altar to shift their meaning, creating new effects that will carry you deeper into the corrupted cathedral.
+      </>),
+    isSoloProject: false,
+    contributions: [
+      "Project direction and team management",
+      "Cards and tag system",
+      "Cards UI",
+      "Cards interaction system",
+      "Cards combination system",
+      "Input management",
+      "Event Channels",
+      "Dialog system",
+    ],
+    image: require("../../Assets/Projects/lexicondiaboli.png"),
+    ghLink: "https://github.com/Ericoman/UditJamCat",
+    glabLink: null,
+    itchioLink: "https://flyerss.itch.io/lexicon-diaboli",
+    steamLink: null,
+    driveLink: null,
+    technologies: ['Unity','C#', 'Git']
+  },
+  {
+    id: "overlookinn",
+    title: "Overlook Inn",
+    inProgress: false,
+    shortDescription: (<>A short exploration game blending serie, liminal-space vibes with a lighthearted, silly tone. Wander, listen for meows, and try not to question the hotel too much. 24th position on Brakeys Game Jam 2026.1. Made with <span className="purple">Unity</span>.</>),
+    fullDescription: (<>
+      Welcome to a perfectly respectable hotel. Nothing strange is happening here.
+      <br/><br/>
+      After a sudden loud noise startled an elderly guest, her cats bolted and are now hiding somewhere in the building. As the hotel receptionist (and the only one willing to deal with this situation), it’s your job to track them down and return them safely.
+      <br/><br/>
+      Search through an old hotel that feels just slightly… off. Corridors don’t always behave the way they should. Rooms seem to appear where they weren’t before. Something about the place is unsettling — but the task at hand remains the same: find those cats.
+      <br/><br/>
+      A short exploration game blending serie, liminal-space vibes with a lighthearted, silly tone. Wander, listen for meows, and try not to question the hotel too much.
+      <br/><br/>
+      Features
+      <ol>
+        <li>Explore a strange, ever-so-slightly wrong hotel.</li>
+        <li>Hunt down runaway cats in unexpected places.</li>        
+        <li>Unsettling atmosphere mixed with absurdist humor.</li>
+        <li>Small secrets and odd events scattered throughout.</li>
+      </ol>
+      </>),
+    isSoloProject: false,
+    contributions: [
+      "Interaction system",
+      "1st floor puzzles",
+      "Infinite corridor",
+    ],
+    image: require("../../Assets/Projects/overlookinn.png"),
+    ghLink: "https://github.com/aemc64/BrackeysJam",
+    glabLink: null,
+    itchioLink: "https://paxcu.itch.io/overlook-inn",
+    steamLink: null,
+    driveLink: null,
+    technologies: ['Unity','C#', 'Git']
+  },
+  {
     id: "underpacked",
     title: "Underpacked!",
     inProgress: true,
@@ -40,6 +105,32 @@ const projects = [
     steamLink: null,
     driveLink: null,
     technologies: ['C++', 'Git', 'Jira']
+  },
+  {
+    id: "maskheist",
+    title: "Mask Heist",
+    inProgress: false,
+    shortDescription: (<>Mask Heist is a puzzle-stealth game set during a single night inside a grand museum.. Made with <span className="purple">Unity</span>. Submission to Global Game Jam 2026.</>),
+    fullDescription: (<>
+      Mask Heist is a puzzle-stealth game set during a single night inside a grand museum.
+      Explore themed rooms and plan your perfect heist using magical masks that unlock new mechanics and ways to play.
+      Each mask changes how you move, hide, or interact with the environment.
+      <br/><br/>
+      The museum sleeps… but one mistake can ruin everything.
+      </>),
+    isSoloProject: false,
+    contributions: [
+      "Guards and cameras AI",
+      "Scene transition system",
+      "Input management",
+    ],
+    image: require("../../Assets/Projects/maskheist.png"),
+    ghLink: "https://github.com/flyeers/Mask",
+    glabLink: null,
+    itchioLink: "https://alberte-diaz.itch.io/mask-heist",
+    steamLink: null,
+    driveLink: null,
+    technologies: ['Unity','C#', 'Git']
   },
   {
     id: "gbb",
